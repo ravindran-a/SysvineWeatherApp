@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53181F77148A4DB4586E4A27 /* Pods_SysvineWeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B260E01C8907FC4B147E04A /* Pods_SysvineWeatherAppTests.framework */; };
+		7947D52A2CB217C189A385CD /* Pods_SysvineWeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C922D17DE2E15CA65CBC2248 /* Pods_SysvineWeatherAppUITests.framework */; };
+		DD7A53333B41805155C026AC /* Pods_SysvineWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0C805C252400D232661CB5 /* Pods_SysvineWeatherApp.framework */; };
+		DEAF9602294E4C0D0060E484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9601294E4C0D0060E484 /* AppDelegate.swift */; };
+		DEAF9606294E4C0D0060E484 /* WeatherInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9605294E4C0D0060E484 /* WeatherInfoViewController.swift */; };
+		DEAF960B294E4C0E0060E484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAF960A294E4C0E0060E484 /* Assets.xcassets */; };
+		DEAF960E294E4C0E0060E484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAF960C294E4C0E0060E484 /* LaunchScreen.storyboard */; };
+		DEAF9619294E4C0E0060E484 /* SysvineWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9618294E4C0E0060E484 /* SysvineWeatherAppTests.swift */; };
+		DEAF9623294E4C0E0060E484 /* SysvineWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9622294E4C0E0060E484 /* SysvineWeatherAppUITests.swift */; };
+		DEAF9625294E4C0E0060E484 /* SysvineWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9624294E4C0E0060E484 /* SysvineWeatherAppUITestsLaunchTests.swift */; };
+		DEAF9642294E5D530060E484 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9641294E5D530060E484 /* Coordinator.swift */; };
+		DEAF9644294E5D790060E484 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9643294E5D790060E484 /* AppCoordinator.swift */; };
+		DEAF9649294E609F0060E484 /* WeatherInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9648294E609F0060E484 /* WeatherInfoViewModel.swift */; };
+		DEAF964E294E60CC0060E484 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF964D294E60CC0060E484 /* WeatherDetailViewController.swift */; };
+		DEAF9650294E60D60060E484 /* WeatherDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF964F294E60D60060E484 /* WeatherDetailViewModel.swift */; };
+		DEAF9652294E63430060E484 /* WeatherCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9651294E63430060E484 /* WeatherCoordinator.swift */; };
+		DEAF9654294E656F0060E484 /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9653294E656F0060E484 /* WeatherServiceProtocol.swift */; };
+		DEAF9656294E658A0060E484 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9655294E658A0060E484 /* UIFactory.swift */; };
+		DEAF9658294E65AC0060E484 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9657294E65AC0060E484 /* WeatherService.swift */; };
+		DEAF965A294E65B80060E484 /* MockWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9659294E65B80060E484 /* MockWeatherService.swift */; };
+		DEAF965C294E65F30060E484 /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF965B294E65F30060E484 /* APIEndPoints.swift */; };
+		DEAF965E294E662D0060E484 /* String+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF965D294E662D0060E484 /* String+Helper.swift */; };
+		DEAF9662294E668F0060E484 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9661294E668F0060E484 /* ApiManager.swift */; };
+		DEAF9664294E73A20060E484 /* WeatherInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9663294E73A20060E484 /* WeatherInfoCell.swift */; };
+		DEAF9667294F96140060E484 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9666294F96140060E484 /* WeatherInfo.swift */; };
+		DEAF966A294FAAF90060E484 /* WeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF9669294FAAF90060E484 /* WeatherDetailCell.swift */; };
+		DEAF966C294FCB2E0060E484 /* WeatherInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF966B294FCB2E0060E484 /* WeatherInfoHeaderView.swift */; };
+		DEAF966E29504E220060E484 /* WeatherHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAF966D29504E220060E484 /* WeatherHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEAF9615294E4C0E0060E484 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEAF95F6294E4C0D0060E484 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEAF95FD294E4C0D0060E484;
+			remoteInfo = SysvineWeatherApp;
+		};
+		DEAF961F294E4C0E0060E484 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEAF95F6294E4C0D0060E484 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEAF95FD294E4C0D0060E484;
+			remoteInfo = SysvineWeatherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		023086E2A5FDF732BDA0FEC4 /* Pods-SysvineWeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SysvineWeatherAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SysvineWeatherAppTests/Pods-SysvineWeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B260E01C8907FC4B147E04A /* Pods_SysvineWeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SysvineWeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0C805C252400D232661CB5 /* Pods_SysvineWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SysvineWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E744D2F8C413DA10FE66991 /* Pods-SysvineWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SysvineWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-SysvineWeatherApp/Pods-SysvineWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		702A4F9F7D0AAE2509323E44 /* Pods-SysvineWeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SysvineWeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-SysvineWeatherAppTests/Pods-SysvineWeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CD972EBB3F6C98DBBA841A1 /* Pods-SysvineWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SysvineWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-SysvineWeatherApp/Pods-SysvineWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		886AC172A061353478C0C933 /* Pods-SysvineWeatherAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SysvineWeatherAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SysvineWeatherAppUITests/Pods-SysvineWeatherAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1059C478E21B66FC5743EC5 /* Pods-SysvineWeatherAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SysvineWeatherAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SysvineWeatherAppUITests/Pods-SysvineWeatherAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C922D17DE2E15CA65CBC2248 /* Pods_SysvineWeatherAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SysvineWeatherAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAF95FE294E4C0D0060E484 /* SysvineWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SysvineWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAF9601294E4C0D0060E484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEAF9605294E4C0D0060E484 /* WeatherInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoViewController.swift; sourceTree = "<group>"; };
+		DEAF960A294E4C0E0060E484 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEAF960D294E4C0E0060E484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEAF960F294E4C0E0060E484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEAF9614294E4C0E0060E484 /* SysvineWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SysvineWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAF9618294E4C0E0060E484 /* SysvineWeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysvineWeatherAppTests.swift; sourceTree = "<group>"; };
+		DEAF961E294E4C0E0060E484 /* SysvineWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SysvineWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAF9622294E4C0E0060E484 /* SysvineWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysvineWeatherAppUITests.swift; sourceTree = "<group>"; };
+		DEAF9624294E4C0E0060E484 /* SysvineWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysvineWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DEAF9641294E5D530060E484 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		DEAF9643294E5D790060E484 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		DEAF9648294E609F0060E484 /* WeatherInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoViewModel.swift; sourceTree = "<group>"; };
+		DEAF964D294E60CC0060E484 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
+		DEAF964F294E60D60060E484 /* WeatherDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewModel.swift; sourceTree = "<group>"; };
+		DEAF9651294E63430060E484 /* WeatherCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCoordinator.swift; sourceTree = "<group>"; };
+		DEAF9653294E656F0060E484 /* WeatherServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceProtocol.swift; sourceTree = "<group>"; };
+		DEAF9655294E658A0060E484 /* UIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
+		DEAF9657294E65AC0060E484 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		DEAF9659294E65B80060E484 /* MockWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherService.swift; sourceTree = "<group>"; };
+		DEAF965B294E65F30060E484 /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
+		DEAF965D294E662D0060E484 /* String+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Helper.swift"; sourceTree = "<group>"; };
+		DEAF9661294E668F0060E484 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		DEAF9663294E73A20060E484 /* WeatherInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoCell.swift; sourceTree = "<group>"; };
+		DEAF9666294F96140060E484 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		DEAF9669294FAAF90060E484 /* WeatherDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailCell.swift; sourceTree = "<group>"; };
+		DEAF966B294FCB2E0060E484 /* WeatherInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoHeaderView.swift; sourceTree = "<group>"; };
+		DEAF966D29504E220060E484 /* WeatherHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEAF95FB294E4C0D0060E484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7A53333B41805155C026AC /* Pods_SysvineWeatherApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAF9611294E4C0E0060E484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53181F77148A4DB4586E4A27 /* Pods_SysvineWeatherAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAF961B294E4C0E0060E484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7947D52A2CB217C189A385CD /* Pods_SysvineWeatherAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E700CD6ABB32D692A34C80D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E744D2F8C413DA10FE66991 /* Pods-SysvineWeatherApp.debug.xcconfig */,
+				7CD972EBB3F6C98DBBA841A1 /* Pods-SysvineWeatherApp.release.xcconfig */,
+				023086E2A5FDF732BDA0FEC4 /* Pods-SysvineWeatherAppTests.debug.xcconfig */,
+				702A4F9F7D0AAE2509323E44 /* Pods-SysvineWeatherAppTests.release.xcconfig */,
+				886AC172A061353478C0C933 /* Pods-SysvineWeatherAppUITests.debug.xcconfig */,
+				B1059C478E21B66FC5743EC5 /* Pods-SysvineWeatherAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		B46FFD81A7CC9B42969D509D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A0C805C252400D232661CB5 /* Pods_SysvineWeatherApp.framework */,
+				1B260E01C8907FC4B147E04A /* Pods_SysvineWeatherAppTests.framework */,
+				C922D17DE2E15CA65CBC2248 /* Pods_SysvineWeatherAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEAF95F5294E4C0D0060E484 = {
+			isa = PBXGroup;
+			children = (
+				DEAF9600294E4C0D0060E484 /* SysvineWeatherApp */,
+				DEAF9617294E4C0E0060E484 /* SysvineWeatherAppTests */,
+				DEAF9621294E4C0E0060E484 /* SysvineWeatherAppUITests */,
+				DEAF95FF294E4C0D0060E484 /* Products */,
+				1E700CD6ABB32D692A34C80D /* Pods */,
+				B46FFD81A7CC9B42969D509D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEAF95FF294E4C0D0060E484 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF95FE294E4C0D0060E484 /* SysvineWeatherApp.app */,
+				DEAF9614294E4C0E0060E484 /* SysvineWeatherAppTests.xctest */,
+				DEAF961E294E4C0E0060E484 /* SysvineWeatherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEAF9600294E4C0D0060E484 /* SysvineWeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9635294E590A0060E484 /* Scenes */,
+				DEAF9636294E59100060E484 /* Infra */,
+				DEAF9633294E58F10060E484 /* AppResources */,
+				DEAF9637294E591C0060E484 /* SupportingFiles */,
+			);
+			path = SysvineWeatherApp;
+			sourceTree = "<group>";
+		};
+		DEAF9617294E4C0E0060E484 /* SysvineWeatherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9618294E4C0E0060E484 /* SysvineWeatherAppTests.swift */,
+			);
+			path = SysvineWeatherAppTests;
+			sourceTree = "<group>";
+		};
+		DEAF9621294E4C0E0060E484 /* SysvineWeatherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9622294E4C0E0060E484 /* SysvineWeatherAppUITests.swift */,
+				DEAF9624294E4C0E0060E484 /* SysvineWeatherAppUITestsLaunchTests.swift */,
+			);
+			path = SysvineWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		DEAF9633294E58F10060E484 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF960A294E4C0E0060E484 /* Assets.xcassets */,
+				DEAF960C294E4C0E0060E484 /* LaunchScreen.storyboard */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		DEAF9635294E590A0060E484 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9638294E59710060E484 /* WeatherInfo */,
+				DEAF9639294E59780060E484 /* WeatherDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DEAF9636294E59100060E484 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9640294E59BE0060E484 /* Coordinators */,
+				DEAF963F294E59B90060E484 /* Extensions */,
+				DEAF963E294E59B50060E484 /* Managers */,
+				DEAF963D294E59AD0060E484 /* Enums */,
+				DEAF963C294E59A70060E484 /* Factory */,
+				DEAF963B294E59A00060E484 /* Protocols */,
+				DEAF963A294E599C0060E484 /* Services */,
+				DEAF966F29504E260060E484 /* Helpers */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		DEAF9637294E591C0060E484 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9601294E4C0D0060E484 /* AppDelegate.swift */,
+				DEAF960F294E4C0E0060E484 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DEAF9638294E59710060E484 /* WeatherInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9647294E60760060E484 /* Model */,
+				DEAF9645294E606C0060E484 /* View */,
+				DEAF9646294E60710060E484 /* ViewModel */,
+			);
+			path = WeatherInfo;
+			sourceTree = "<group>";
+		};
+		DEAF9639294E59780060E484 /* WeatherDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF964A294E60A40060E484 /* Model */,
+				DEAF964C294E60BC0060E484 /* View */,
+				DEAF964B294E60A70060E484 /* ViewModel */,
+			);
+			path = WeatherDetail;
+			sourceTree = "<group>";
+		};
+		DEAF963A294E599C0060E484 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9657294E65AC0060E484 /* WeatherService.swift */,
+				DEAF9659294E65B80060E484 /* MockWeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DEAF963B294E59A00060E484 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9641294E5D530060E484 /* Coordinator.swift */,
+				DEAF9653294E656F0060E484 /* WeatherServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DEAF963C294E59A70060E484 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9655294E658A0060E484 /* UIFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		DEAF963D294E59AD0060E484 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF965B294E65F30060E484 /* APIEndPoints.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DEAF963E294E59B50060E484 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9661294E668F0060E484 /* ApiManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DEAF963F294E59B90060E484 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF965D294E662D0060E484 /* String+Helper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DEAF9640294E59BE0060E484 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9643294E5D790060E484 /* AppCoordinator.swift */,
+				DEAF9651294E63430060E484 /* WeatherCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		DEAF9645294E606C0060E484 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9605294E4C0D0060E484 /* WeatherInfoViewController.swift */,
+				DEAF9665294E73A60060E484 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEAF9646294E60710060E484 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9648294E609F0060E484 /* WeatherInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEAF9647294E60760060E484 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9666294F96140060E484 /* WeatherInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEAF964A294E60A40060E484 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEAF964B294E60A70060E484 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF964F294E60D60060E484 /* WeatherDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DEAF964C294E60BC0060E484 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF964D294E60CC0060E484 /* WeatherDetailViewController.swift */,
+				DEAF9668294FAAE80060E484 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEAF9665294E73A60060E484 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9663294E73A20060E484 /* WeatherInfoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEAF9668294FAAE80060E484 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF9669294FAAF90060E484 /* WeatherDetailCell.swift */,
+				DEAF966B294FCB2E0060E484 /* WeatherInfoHeaderView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEAF966F29504E260060E484 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DEAF966D29504E220060E484 /* WeatherHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEAF95FD294E4C0D0060E484 /* SysvineWeatherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEAF9628294E4C0E0060E484 /* Build configuration list for PBXNativeTarget "SysvineWeatherApp" */;
+			buildPhases = (
+				BACEF162CE396CF175464790 /* [CP] Check Pods Manifest.lock */,
+				DEAF95FA294E4C0D0060E484 /* Sources */,
+				DEAF95FB294E4C0D0060E484 /* Frameworks */,
+				DEAF95FC294E4C0D0060E484 /* Resources */,
+				0D477F28556E173641CF727D /* [CP] Embed Pods Frameworks */,
+				DEAF9632294E4DFA0060E484 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SysvineWeatherApp;
+			productName = SysvineWeatherApp;
+			productReference = DEAF95FE294E4C0D0060E484 /* SysvineWeatherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEAF9613294E4C0E0060E484 /* SysvineWeatherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEAF962B294E4C0E0060E484 /* Build configuration list for PBXNativeTarget "SysvineWeatherAppTests" */;
+			buildPhases = (
+				433C3D5A76EA3F563F1C949D /* [CP] Check Pods Manifest.lock */,
+				DEAF9610294E4C0E0060E484 /* Sources */,
+				DEAF9611294E4C0E0060E484 /* Frameworks */,
+				DEAF9612294E4C0E0060E484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEAF9616294E4C0E0060E484 /* PBXTargetDependency */,
+			);
+			name = SysvineWeatherAppTests;
+			productName = SysvineWeatherAppTests;
+			productReference = DEAF9614294E4C0E0060E484 /* SysvineWeatherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEAF961D294E4C0E0060E484 /* SysvineWeatherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEAF962E294E4C0E0060E484 /* Build configuration list for PBXNativeTarget "SysvineWeatherAppUITests" */;
+			buildPhases = (
+				317422ACDE68CF5025CFA5EE /* [CP] Check Pods Manifest.lock */,
+				DEAF961A294E4C0E0060E484 /* Sources */,
+				DEAF961B294E4C0E0060E484 /* Frameworks */,
+				DEAF961C294E4C0E0060E484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEAF9620294E4C0E0060E484 /* PBXTargetDependency */,
+			);
+			name = SysvineWeatherAppUITests;
+			productName = SysvineWeatherAppUITests;
+			productReference = DEAF961E294E4C0E0060E484 /* SysvineWeatherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEAF95F6294E4C0D0060E484 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DEAF95FD294E4C0D0060E484 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DEAF9613294E4C0E0060E484 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DEAF95FD294E4C0D0060E484;
+					};
+					DEAF961D294E4C0E0060E484 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DEAF95FD294E4C0D0060E484;
+					};
+				};
+			};
+			buildConfigurationList = DEAF95F9294E4C0D0060E484 /* Build configuration list for PBXProject "SysvineWeatherApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEAF95F5294E4C0D0060E484;
+			productRefGroup = DEAF95FF294E4C0D0060E484 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEAF95FD294E4C0D0060E484 /* SysvineWeatherApp */,
+				DEAF9613294E4C0E0060E484 /* SysvineWeatherAppTests */,
+				DEAF961D294E4C0E0060E484 /* SysvineWeatherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEAF95FC294E4C0D0060E484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF960E294E4C0E0060E484 /* LaunchScreen.storyboard in Resources */,
+				DEAF960B294E4C0E0060E484 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAF9612294E4C0E0060E484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAF961C294E4C0E0060E484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D477F28556E173641CF727D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SysvineWeatherApp/Pods-SysvineWeatherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SysvineWeatherApp/Pods-SysvineWeatherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SysvineWeatherApp/Pods-SysvineWeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		317422ACDE68CF5025CFA5EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SysvineWeatherAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		433C3D5A76EA3F563F1C949D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SysvineWeatherAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BACEF162CE396CF175464790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SysvineWeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEAF9632294E4DFA0060E484 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint --config ${PODS_ROOT}/../.swiftlint.yml\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEAF95FA294E4C0D0060E484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF9662294E668F0060E484 /* ApiManager.swift in Sources */,
+				DEAF9650294E60D60060E484 /* WeatherDetailViewModel.swift in Sources */,
+				DEAF964E294E60CC0060E484 /* WeatherDetailViewController.swift in Sources */,
+				DEAF965E294E662D0060E484 /* String+Helper.swift in Sources */,
+				DEAF9658294E65AC0060E484 /* WeatherService.swift in Sources */,
+				DEAF965C294E65F30060E484 /* APIEndPoints.swift in Sources */,
+				DEAF966E29504E220060E484 /* WeatherHelper.swift in Sources */,
+				DEAF9654294E656F0060E484 /* WeatherServiceProtocol.swift in Sources */,
+				DEAF9667294F96140060E484 /* WeatherInfo.swift in Sources */,
+				DEAF9649294E609F0060E484 /* WeatherInfoViewModel.swift in Sources */,
+				DEAF9656294E658A0060E484 /* UIFactory.swift in Sources */,
+				DEAF965A294E65B80060E484 /* MockWeatherService.swift in Sources */,
+				DEAF9642294E5D530060E484 /* Coordinator.swift in Sources */,
+				DEAF966A294FAAF90060E484 /* WeatherDetailCell.swift in Sources */,
+				DEAF9606294E4C0D0060E484 /* WeatherInfoViewController.swift in Sources */,
+				DEAF966C294FCB2E0060E484 /* WeatherInfoHeaderView.swift in Sources */,
+				DEAF9664294E73A20060E484 /* WeatherInfoCell.swift in Sources */,
+				DEAF9644294E5D790060E484 /* AppCoordinator.swift in Sources */,
+				DEAF9602294E4C0D0060E484 /* AppDelegate.swift in Sources */,
+				DEAF9652294E63430060E484 /* WeatherCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAF9610294E4C0E0060E484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF9619294E4C0E0060E484 /* SysvineWeatherAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEAF961A294E4C0E0060E484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAF9623294E4C0E0060E484 /* SysvineWeatherAppUITests.swift in Sources */,
+				DEAF9625294E4C0E0060E484 /* SysvineWeatherAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEAF9616294E4C0E0060E484 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEAF95FD294E4C0D0060E484 /* SysvineWeatherApp */;
+			targetProxy = DEAF9615294E4C0E0060E484 /* PBXContainerItemProxy */;
+		};
+		DEAF9620294E4C0E0060E484 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEAF95FD294E4C0D0060E484 /* SysvineWeatherApp */;
+			targetProxy = DEAF961F294E4C0E0060E484 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEAF960C294E4C0E0060E484 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEAF960D294E4C0E0060E484 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEAF9626294E4C0E0060E484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEAF9627294E4C0E0060E484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEAF9629294E4C0E0060E484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E744D2F8C413DA10FE66991 /* Pods-SysvineWeatherApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8Q8U8SHDF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SysvineWeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.SysvineWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DEAF962A294E4C0E0060E484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CD972EBB3F6C98DBBA841A1 /* Pods-SysvineWeatherApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8Q8U8SHDF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SysvineWeatherApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherApp;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.SysvineWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DEAF962C294E4C0E0060E484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023086E2A5FDF732BDA0FEC4 /* Pods-SysvineWeatherAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8Q8U8SHDF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.SysvineWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SysvineWeatherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SysvineWeatherApp";
+			};
+			name = Debug;
+		};
+		DEAF962D294E4C0E0060E484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 702A4F9F7D0AAE2509323E44 /* Pods-SysvineWeatherAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8Q8U8SHDF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.SysvineWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SysvineWeatherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SysvineWeatherApp";
+			};
+			name = Release;
+		};
+		DEAF962F294E4C0E0060E484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886AC172A061353478C0C933 /* Pods-SysvineWeatherAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8Q8U8SHDF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.SysvineWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SysvineWeatherApp;
+			};
+			name = Debug;
+		};
+		DEAF9630294E4C0E0060E484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1059C478E21B66FC5743EC5 /* Pods-SysvineWeatherAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8Q8U8SHDF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = in.SysvineWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SysvineWeatherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEAF95F9294E4C0D0060E484 /* Build configuration list for PBXProject "SysvineWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAF9626294E4C0E0060E484 /* Debug */,
+				DEAF9627294E4C0E0060E484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEAF9628294E4C0E0060E484 /* Build configuration list for PBXNativeTarget "SysvineWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAF9629294E4C0E0060E484 /* Debug */,
+				DEAF962A294E4C0E0060E484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEAF962B294E4C0E0060E484 /* Build configuration list for PBXNativeTarget "SysvineWeatherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAF962C294E4C0E0060E484 /* Debug */,
+				DEAF962D294E4C0E0060E484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEAF962E294E4C0E0060E484 /* Build configuration list for PBXNativeTarget "SysvineWeatherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEAF962F294E4C0E0060E484 /* Debug */,
+				DEAF9630294E4C0E0060E484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEAF95F6294E4C0D0060E484 /* Project object */;
+}
