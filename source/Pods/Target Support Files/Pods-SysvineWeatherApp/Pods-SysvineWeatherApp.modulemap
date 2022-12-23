@@ -1,0 +1,6 @@
+framework module Pods_SysvineWeatherApp {
+  umbrella header "Pods-SysvineWeatherApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
